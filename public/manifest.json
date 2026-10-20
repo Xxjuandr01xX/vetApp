@@ -1,0 +1,57 @@
+{
+  "id": "/dashboard",
+  "name": "VetApp — Gestión Clínica Veterinaria",
+  "short_name": "VetApp",
+  "description": "Sistema de gestión clínica, vademécum y récipes para veterinarios en Venezuela",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F9FAFB",
+  "theme_color": "#1E3A5F",
+  "orientation": "portrait-primary",
+  "lang": "es-VE",
+  "categories": ["medical", "productivity", "business"],
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Nuevo Paciente",
+      "short_name": "Paciente",
+      "description": "Registrar una nueva mascota",
+      "url": "/pets/new",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Agendar Cita",
+      "short_name": "Cita",
+      "description": "Programar una consulta médica",
+      "url": "/appointments/new",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Nuevo Tratamiento",
+      "short_name": "Récipe",
+      "description": "Emitir tratamiento y récipe PDF",
+      "url": "/treatments/new",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

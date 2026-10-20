@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-vet-primary: #1E3A5F;
+    --color-vet-primary-light: #3B82F6;
+    --color-vet-accent: #10B981;
+    --color-vet-accent-warm: #F59E0B;
+    --color-vet-danger: #EF4444;
+  }
+
+  body {
+    @apply bg-surface-subtle text-gray-900 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  /* Prevenir zoom en inputs en iOS */
+  input[type='text'],
+  input[type='email'],
+  input[type='number'],
+  input[type='tel'],
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+@layer components {
+  .btn-vet-primary {
+    @apply bg-vet-primary hover:bg-vet-primary/90 text-white font-medium rounded-lg px-5 py-2.5 transition-colors;
+  }
+
+  .btn-vet-accent {
+    @apply bg-vet-accent hover:bg-vet-accent/90 text-white font-medium rounded-lg px-5 py-2.5 transition-colors;
+  }
+
+  .card-vet {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4 sm:p-6;
+  }
+}
